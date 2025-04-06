@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b26051f063.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="img/favicon-3.svg">
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <title>Moviescope</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="title__box nav__link">
+        <img class="nav__icon" src="img/favicon-3.svg">
+        <h1 class="nav__title">Moviescope</h1>
+      </a>
+      <form action="./pages/search.html" class="searchBox">
+        <input type="text" class="searchBox__input" name="search" placeholder="Search Movies/TV Shows">
+        <button class="searchBox__btn">
+          <img src="img/search.svg" class="searchBox__img">
+        </button>
+      </form>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <section class="slide">
+      <div class="frontImages">
+        <button class="frontImages__btn frontImages__btn--left">
+          <i class="fa-solid fa-chevron-left frontImages__btnIcon"></i>
+        </button>
+        <button class="frontImages__btn frontImages__btn--right">
+          <i class="fa-solid fa-chevron-right frontImages__btnIcon"></i>
+        </button>
+        <!-- Example Html
+        <div class="frontImages__img"
+        style="background-image: url('https://image.tmdb.org/t/p/w342/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg');">
+      </div> -->
+      </div>
+      <div class="info">
+        <div class="info__title"></div>
+        <div class="info__overview"></div>
+      </div>
+    </section>
+
+    <section class="movies">
+      <div class="movies__header">
+        <a href="./pages/trendingMovies.html" class="movies__link">Trending Movies
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+      <div class="movies__container">
+        <!--
+          <a href="./pages/details.html">
+            <div class="movies__image" id="505642">
+              <img src="https://image.tmdb.org/t/p/w342/sv1xJUazXeYqALzczSZ3O6nkH75.jpg">
+            </div>
+          </a>
+        -->
+      </div>
+    </section>
+
+    <section class="series">
+      <div class="series__header">
+        <a href="./pages/trendingShows.html" class="series__link">Trending Shows
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+
+      <div class="series__container">
+        <!-- <div class="series__image"
+        style="background-image: url('https://image.tmdb.org/t/p/w342/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg');"></div> -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+  <!-- <script src="./js/search.js"></script> -->
+</body>
+
+</html>
